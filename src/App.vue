@@ -1,28 +1,91 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+.main {
+    text-align: center;
+    padding-top: 80px;
+}
+
+#search {
+    font-size: 18px;
+}
+
+#search label {
+    font-weight: bold;
+}
+
+#search input {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+#search button {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+#search button:hover {
+    background-color: deepskyblue;
+}
+
+#weather {
+    padding: 30px;
+    border: 1px solid #ccc;
+    width: 500px;
+    margin: 100px auto auto;
+    background-color: deepskyblue;
+    box-shadow: 2px 2px 3px #ccc;
+    color: white;
+    box-sizing: border-box;
+    display: none;
+    font-weight: bold;
+}
+
+#weather h1 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#weatherDescription {
+    float: left;
+}
+
+#weatherTemperature {
+    float: right;
+}
+
+#load {
+    padding: 30px;
+    width: 500px;
+    margin: 100px auto auto;
+    display: none;
 }
 </style>
