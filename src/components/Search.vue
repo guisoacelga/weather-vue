@@ -30,7 +30,7 @@ export default {
       var http = new XMLHttpRequest();
       var apiKey = "cb8901e26fbebfa05594288029e4d3b1";
       var url =
-        "http://api.openweathermap.org/data/2.5/weather?q=" +
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
         this.cityName +
         "&units=metric&appid=" +
         apiKey;
