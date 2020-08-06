@@ -1,12 +1,14 @@
 <template>
   <header>
-    <h1>The Super Awesome Weather App</h1>
+    <h1>Find the current weather in any city!</h1>
   </header>
 </template>
 
 
 <script>
-export default {};
+export default {
+  name: "Header"
+};
 </script>
 
 <style scoped>
@@ -19,9 +21,15 @@ header {
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: bold;
   color: dodgerblue;
   margin: 0;
+}
+@media only screen and (max-width: 576px) {
+ h1 {
+    font-size: 0.75rem;
+    margin-top: 60px;
+  }
 }
 </style>
