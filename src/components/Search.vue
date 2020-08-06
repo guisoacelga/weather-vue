@@ -28,7 +28,7 @@ export default {
         return alert("Please enter a City Name");
       }
       var http = new XMLHttpRequest();
-      var apiKey = process.env.API_KEY;
+      var apiKey = "cb8901e26fbebfa05594288029e4d3b1";
       var url =
         "http://api.openweathermap.org/data/2.5/weather?q=" +
         this.cityName +
