@@ -39,11 +39,12 @@ export default {
       http.open(method, url);
       http.onreadystatechange = () => {
         if (http.readyState == XMLHttpRequest.DONE && http.status === 200) {
-          const data = JSON.parse(http.responseText);
+          const data = JSON.parse(http.responseText); //convertir a objeto el string recibido
           const weatherData = {
               cityName: this.cityName,
               description: data.weather[0].description.toUpperCase(),
-              temperature: data.main.temp
+              temperature: data.main.temp,
+              icon: data.weather[0].icon 
           }
             this.$emit("dataTemp", weatherData); //nombre del evento, datos transmitidos
          
