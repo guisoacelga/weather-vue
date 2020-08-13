@@ -25,6 +25,7 @@ export default {
         cityName: "",
         description: "",
         temperature: "",
+        icon: ""
       },
     };
   },
